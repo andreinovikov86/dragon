@@ -1,0 +1,130 @@
+$backgroundColor: #03350a;
+$elementsColor: #d8fedd;
+$mainColor: #001703;
+$borderRadius: 5px;
+$boldFont: 700;
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: Arial
+}
+
+html {
+    background: $backgroundColor;
+	color: $mainColor;
+}
+
+.menu {
+    background: $mainColor;
+    padding: 10px;
+    font-size: 2em;
+	
+	select {
+		width: 8%;
+        background-color: $elementsColor;
+        border-radius: $borderRadius;
+        font-weight: $boldFont;
+        padding: 7px 10px;
+        margin-left: 10px;
+    }
+	
+    button {
+		width: 10%;
+        background-color: $elementsColor;
+        border-radius: $borderRadius+10;
+        border: 2px solid $mainColor;
+        text-transform: uppercase;
+        font-weight: $boldFont;
+        padding: 10px 15px;
+        margin-left: 10px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.score {
+	background-color: $elementsColor;
+	border-radius: $borderRadius;
+	border: 5px double $mainColor;
+	text-align: center;
+	font-weight: $boldFont;
+	font-size: 3em;
+}
+
+#battle {
+    &.hidden {
+        display: none;
+    }
+}
+
+.battle-info {
+	width: 100%;
+	float: left;
+	padding: 10px;
+	margin-top: 5px;
+	color: $elementsColor;
+	display: inline;
+	
+	#battle-title {
+		font-size: 1.15em;
+		font-weight: $boldFont;
+		#battle-id {
+			font-size: 1.75em;
+		}
+	}
+	
+	#weather {
+		font-style: italic;
+	}	
+}
+
+#dragon, #knight {
+    width: 50%;
+	float: left;
+    background: $elementsColor;
+    border-radius: $borderRadius;
+	border: 5px double $mainColor;
+    padding: 10px;
+    margin-top: 15px;
+	font-weight: $boldFont;
+	
+	.skill {
+		div {
+			width: 25%;
+			display: inline-block;
+		}
+		.skill-name {
+			font-weight: 400;
+			color: $mainColor;
+		}
+	}
+}
+
+.battle-results {
+	width: 100%;
+	float: left;
+	padding: 10px;
+	margin-top: 5px;
+	color: $elementsColor;
+	display: inline;
+	font-size: 1.15em;
+	font-weight: $boldFont;
+	
+	#battle-result {
+		font-weight: 400;
+		font-style: italic;
+	}	
+}
+
+

@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Dragons of Mugloar - Andrei Novikov</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="menu">
+      <select id="select-value">
+        <option value="1">1</option>
+        <option value="5">5</option>
+        <option value="10" selected="selected">10</option>
+        <option value="25">25</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+      </select> 
+      <button id="start-button">Start</button></div>
+      <div class="score">
+        <div class="score-title">DRAGON-KNIGHT</div>
+        <div id="score-value"></div>
+        <div id="win-percent"></div>
+      </div>
+      <div id="battle" class="hidden">
+        <div class="battle-info">
+          <div id="battle-title">
+            <div class="battle-text">LAST BATTLE:</div>
+            <div id="battle-id"></div>
+          </div>
+          <div id="weather"></div>
+        </div>
+        <div class="battle-details">
+          <div id="dragon">
+            <div class="hero-name">Dragon</div>
+            <div class="skill">
+              <div class="skill-name">Scale thickness:</div>
+              <div id="dragon-thickness"></div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">Claw sharpness:</div>
+              <div id="dragon-sharpness"></div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">Wing strength:</div>
+              <div id="dragon-strength"></div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">Fire breath:</div>
+              <div id="dragon-breath"></div>
+            </div>
+          </div>
+          <div id="knight">
+            <div id="knight-name" class="hero-name"></div>
+            <div class="skill">
+              <div class="skill-name">Attack:</div>
+              <div id="knight-attack"></div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">Armor:</div>
+              <div id="knight-armor"></div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">Agility:</div>
+              <div id="knight-agility"></div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">Endurance:</div>
+              <div id="knight-endurance"></div>
+            </div>
+          </div>
+        </div>
+        <div class="battle-results">
+          <div class="battle-text">RESULT:</div>
+          <div id="battle-result"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
